@@ -1,3 +1,19 @@
+a {
+    text-decoration: underline;
+    -webkit-text-fill-color: rgb(105,105,105);
+}
+
+a:hover{
+    -webkit-text-fill-color: rgb(185, 164, 240);
+}
+#prof-org a{
+    text-decoration: none;
+
+}
+
+#publications a{
+    /* text-decoration: none; */
+}
 html, body {
     overflow-x: hidden;
   }
@@ -70,6 +86,7 @@ h3 {
 }
 #students-left a{
     -webkit-text-fill-color: rgb(105,105,105);
+    text-decoration: underline;
     text-align: right;
 }
 #students-right h3{
@@ -80,17 +97,19 @@ h3 {
 }
 #students-right a{
     -webkit-text-fill-color: rgb(105,105,105);
+    text-decoration: underline;
+
     text-align: left;
 }
 
-#students-right a:hover{
+/* #students-right a:hover{
     -webkit-text-fill-color: rgb(43, 153, 226);
     text-align: center;
 }
 #students-left a:hover{
     -webkit-text-fill-color: rgb(43, 153, 226);
     text-align: center;
-}
+} */
 #intro{
     padding-right: 28px;
     padding-bottom: 28px;
