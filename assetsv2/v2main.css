@@ -1,19 +1,33 @@
-a {
-    text-decoration: underline;
-    -webkit-text-fill-color: rgb(105,105,105);
+@media only screen and (max-width: 635px) {
+    #logo {
+        display: none;
+    }
+    #headerwrap {
+        /* padding: 1%; */
+        height: 100px;
+    }
+    #first-row{
+        transform: translate(0,-300);
+        /* padding: 0%; */
+    }
+   #molecule-img {
+        position: absolute;
+        transform: translate(75px, -650px);
+    }
 }
 
-a:hover{
-    -webkit-text-fill-color: rgb(185, 164, 240);
+#header-title1 {
+    -webkit-text-fill-color: white;
+    font-family: font-family: 'Cutive', serif;
+    padding-top: 15px;
+
 }
-#prof-org a{
-    text-decoration: none;
+#header-title2 {
+    -webkit-text-fill-color: white;
+    font-family: font-family: 'Cutive', serif;
 
 }
 
-#publications a{
-    /* text-decoration: none; */
-}
 html, body {
     overflow-x: hidden;
   }
@@ -31,16 +45,17 @@ html, body {
 p {
     -webkit-text-fill-color: rgb(85,85,85);
     justify-content: left;
-    font-size: 18px;
+    font-size: 22px;
     margin: 28px 20px 18px 20px;
 }
 
 h3 {
     -webkit-text-fill-color: rgb(45,45,45);
     padding-top: 16px;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
     padding-left: 16px;
     padding-right: 16px;
+    font-size: 34px;
 }
 
 #education-title p{
@@ -86,7 +101,6 @@ h3 {
 }
 #students-left a{
     -webkit-text-fill-color: rgb(105,105,105);
-    text-decoration: underline;
     text-align: right;
 }
 #students-right h3{
@@ -97,26 +111,26 @@ h3 {
 }
 #students-right a{
     -webkit-text-fill-color: rgb(105,105,105);
-    text-decoration: underline;
-
     text-align: left;
 }
 
-/* #students-right a:hover{
+#students-right a:hover{
     -webkit-text-fill-color: rgb(43, 153, 226);
     text-align: center;
 }
 #students-left a:hover{
     -webkit-text-fill-color: rgb(43, 153, 226);
     text-align: center;
-} */
+}
 #intro{
     padding-right: 28px;
     padding-bottom: 28px;
     border-right: solid 1px rgb(105,105,105);
     border-bottom: solid 1px rgb(105,105,105);
 }
-
+#first-row{
+    transform: translate(0,200);
+}
 #lectures h3{
     
     text-align: left;
@@ -153,20 +167,18 @@ body {
     top: 0;
     width: 100%;
     z-index: 900;
-    padding-bottom: 6px;
+    /* padding-bottom: 6px; */
 }
 
-.header {
-    /* position: fixed; */
-}
 
 #molecule-img{
     display:block;
     position: fixed;
+    opacity: 1%;
     z-index: -900;
-    height:200px;
-    width:200px;
-    transform: translate(-40px,-400px);
+    height:45%;
+    width:45%;
+    transform: translate(250px,-350px);
     /* background-repeat:no-repeat; */
     background-image:url(assetsv2/backdrop-vert-grey-purp-02);
     /* background-position:top;
