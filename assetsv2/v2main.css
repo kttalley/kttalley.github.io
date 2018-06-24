@@ -1,3 +1,29 @@
+@media only screen and (max-width: 635px) {
+    #logo {
+        display: none;
+    }
+    #headerwrap {
+        /* padding: 1%; */
+        height: 100px;
+    }
+    #first-row{
+        transform: translate(0,-300);
+        /* padding: 0%; */
+    }
+   #molecule-img {
+        position: absolute;
+        transform: translate(75px, -650px);
+    }
+}
+
+
+
+
+
+
+
+
+
 a {
     text-decoration: underline;
     -webkit-text-fill-color: rgb(105,105,105);
