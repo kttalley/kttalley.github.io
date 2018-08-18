@@ -1,6 +1,25 @@
+@media only screen and (max-width: 835px) {
+    #mobileMolecule-img {
+        display:block;
+        position: fixed;
+        opacity: 0%;
+        z-index: -900;
+        height:45%;
+        width:45%;
+        transform: translate(-200px,270px);
+        /* background-repeat:no-repeat; */
+        background-image:url(assetsv2/backdrop-vert-grey-purp-02);
+        /* background-position:top;
+        
+        margin:-100px 0 32px 0 */
+        /* overflow-x: hidden; */  */
+    }
+
+}
+
 @media only screen and (max-width: 635px) {
     #logo {
-        display: none;
+      display: none;
     }
     #headerwrap {
         /* padding: 1%; */
@@ -10,9 +29,33 @@
         transform: translate(0,-300);
         /* padding: 0%; */
     }
-   #molecule-img {
-        position: absolute;
-        transform: translate(75px, -650px);
+   #molecule-splash {
+        display: none;
+    }
+    #mobileMolecule-img {
+        display:block;
+        position: fixed;
+        opacity: 0%;
+        z-index: -900;
+        height:45%;
+        width:45%;
+        transform: translate(-200px,270px);
+        /* background-repeat:no-repeat; */
+        background-image:url(assetsv2/backdrop-vert-grey-purp-02);
+        /* background-position:top;
+        
+        margin:-100px 0 32px 0 */
+        /* overflow-x: hidden; */  */
+    }
+    
+    .topnav {
+        display: none;
+    }
+    #phdText {
+        font-size: 14px;
+    }
+    .header h2 {
+        font-size: 14px;
     }
 <<<<<<< HEAD
 }
@@ -31,7 +74,9 @@ a {
 =======
 >>>>>>> 4901e09800c0a653b58729a6b1ad3250b8fc3a50
 }
-
+#phdText {
+    font-size: 18px;
+}
 #header-title1 {
     -webkit-text-fill-color: white;
     font-family: font-family: 'Cutive', serif;
@@ -186,22 +231,30 @@ body {
     /* padding-bottom: 6px; */
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: aquamarine;
+}
 
-#molecule-img{
+
+#mobileMolecule-img {
     display:block;
     position: fixed;
-    opacity: 1%;
+    opacity: 0%;
     z-index: -900;
     height:45%;
     width:45%;
-    transform: translate(250px,-350px);
+    transform: translate(-20px,270px);
     /* background-repeat:no-repeat; */
     background-image:url(assetsv2/backdrop-vert-grey-purp-02);
     /* background-position:top;
     
     margin:-100px 0 32px 0 */
-    /* overflow-x: hidden; */
+    /* overflow-x: hidden; */  */
 }
+
+
+
 
 .header h1{
     padding-top: 16px;
@@ -213,6 +266,7 @@ body {
 .header h2{
     text-align: left;
     font-family: 'consolas';
+    font-size: 28px;
     -webkit-text-fill-color:rgb(75,75,75);
 }
 .row{
