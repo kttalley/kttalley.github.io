@@ -25,7 +25,18 @@
     <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=consolas:400,300,700' rel='stylesheet' type='text/css'>
 </head>
-
+<script type="text/javascript" src="JSmol.min.js"></script>
+<script type="text/javascript">
+    var containerHeight = "100%";
+    // var containerWidth = window.innerWidth / 4;
+    var containerWidth = "100%";
+    var Info = {
+        color: "#E8F4FF",
+        height: containerHeight,
+        width: containerWidth,
+        use: "HTML5"
+    };
+</script>
 
 <div class="header" id="headerwrap">
     <div class="container-fluid">
@@ -74,29 +85,51 @@
 <body>
     <div class="row">
             <div class="col-sm-1">
-                    <div id = "mobileMolecule-img">
-                            <img src="assetsv2/backdrop-vert-grey-purp-02.svg" >
-                        </div>
+                    
                 </div>
         <div class="col-sm-5">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+           
             <p id="intro">
-                Dr. Talley is a professional consultant, researcher, and Cheif Scientific Officer. <a href = "https://scholar.google.com/citations?user=WPHVWCYAAAAJ&hl=en&oi=ao" target="_blank">After his years of research in Toxicology, Crystallography and Neuroparhmacology</a>, he works as a consultant and Scientific Officer for several private companies and operations throughout Washington
+                Dr. Talley is a consultant, researcher, and Cheif Scientific Officer. <a href = "https://scholar.google.com/citations?user=WPHVWCYAAAAJ&hl=en&oi=ao" target="_blank">After his years of research in Toxicology, Crystallography and Neuroparhmacology</a>, Dr. Talley consults and oversees Scientific operations for several private companies throughout Washington
                 state. Have a business in need of analytic-driven strategies? Reach out for a consultation by emailing: <a href = "tttalley@live.com">tttalley@live.com</a>.
             </p>
-            
+            <div id = "jsmole-container">
+                <script type="text/javascript">
+                    jmolApplet0 = Jmol.getApplet("jmolApplet", Info);
+                    Jmol.script(jmolApplet," load 5tvc.pdb; spin on; restrict protein; cartoons; color structure;")
+                </script>
+                <p>
+                    <a href ="http://www.rcsb.org/structure/5TVC">Protein 5tvc</a>
+                </p>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
         </div>
 
         <div id="education-title" class="col-sm-5">
                 
-                <br />
-                <br />
-                <br />
-                
+                <!-- <div id = "jsmole-container">
+                <script type="text/javascript">
+                    jmolApplet0 = Jmol.getApplet("jmolApplet", Info);
+                    Jmol.script(jmolApplet," load cb7.sdf; spin on;")
+                </script>
+                </div> -->
             <h3>Education</h3>
             <br />
             <p>University California, San Diego, La Jolla, CA, US
@@ -145,9 +178,24 @@
             <p>
                 National Institutes of Health National Research Service Award; declined July 2002
             </p>
-            <br />
-            <br />
-            <br />
+            <!-- <div id = "jsmole-container">
+                <script type="text/javascript">
+                    jmolApplet0 = Jmol.getApplet("jmolApplet", Info);
+                    Jmol.script(jmolApplet," load cb7.sdf; spin on;")
+                </script>
+                </div> -->
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             
         </div>
 
@@ -220,8 +268,11 @@
                     <br />
                 </div>
                 <div class = "col-sm-5" style = "top:100px;">
-                    <div >
+                    <!-- <div >
                     <img src= "assetsv2/grey-backdrop-horiz.svg">  
+                    </div> -->
+                    <div id = "mobileMolecule-img">
+                        <img src="assetsv2/backdrop-vert-grey-purp-02.svg" >
                     </div>
                 </div>
                 <div class="col-sm-1"></div>

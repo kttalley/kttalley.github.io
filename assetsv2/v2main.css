@@ -4,8 +4,8 @@
         position: fixed;
         opacity: 0%;
         z-index: -900;
-        height:45%;
-        width:45%;
+        height:25%;
+        width:25%;
         transform: translate(-200px,270px);
         /* background-repeat:no-repeat; */
         background-image:url(assetsv2/backdrop-vert-grey-purp-02);
@@ -14,10 +14,19 @@
         margin:-100px 0 32px 0 */
         /* overflow-x: hidden; */  */
     }
-
+    #jsmole-container {
+        position: relative;
+        z-index:0;
+        width: 45%;
+        height: 25%;
+        align-content: right;
+        transform: translate(50px, 0px);
+    
+    }
 }
 
-@media only screen and (max-width: 635px) {
+
+@media only screen and (max-width: 575px) {
     #logo {
       display: none;
     }
@@ -37,8 +46,8 @@
         position: fixed;
         opacity: 0%;
         z-index: -900;
-        height:45%;
-        width:45%;
+        height:25%;
+        width:25%;
         transform: translate(-200px,270px);
         /* background-repeat:no-repeat; */
         background-image:url(assetsv2/backdrop-vert-grey-purp-02);
@@ -73,6 +82,21 @@ a {
     -webkit-text-fill-color: rgb(105,105,105);
 =======
 >>>>>>> 4901e09800c0a653b58729a6b1ad3250b8fc3a50
+}
+
+#jsmole-container {
+    position: relative;
+    z-index:0;
+    width: 45%;
+    height: 45%;
+    align-content: right;
+    transform: translate(50px, 0px);
+
+}
+a {
+    text-decoration: underline;
+    -webkit-text-fill-color: rgb(105,105,105);
+    text-decoration-color: grey;
 }
 #phdText {
     font-size: 18px;
@@ -267,6 +291,7 @@ body {
     text-align: left;
     font-family: 'consolas';
     font-size: 28px;
+    /* padding-top: 16px; */
     -webkit-text-fill-color:rgb(75,75,75);
 }
 .row{
