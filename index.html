@@ -20,23 +20,12 @@
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
+    <script src = "https://unpkg.com/ngl@0.10.4/dist/ngl.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=consolas:400,300,700' rel='stylesheet' type='text/css'>
 </head>
-<script type="text/javascript" src="JSmol.min.js"></script>
-<script type="text/javascript">
-    var containerHeight = "100%";
-    // var containerWidth = window.innerWidth / 4;
-    var containerWidth = "100%";
-    var Info = {
-        color: "#E8F4FF",
-        height: containerHeight,
-        width: containerWidth,
-        use: "HTML5"
-    };
-</script>
 
 <div class="header" id="headerwrap">
     <div class="container-fluid">
@@ -44,36 +33,54 @@
             
             
                     <div class="col-sm-1">
-                    <br />
+                    
           
                         <img src="assetsv2/white-logo.svg"  id = "logo" height = "40px" width="40px" >
-                   
+                        
                     </div>
-            <div class=" col-sm-4" style="text-align:right">
-                
-                <h2>Todd T. Talley</h2>
+            <div class=" col-sm-2">
+                <a id = "title" href = "#intro-link" style = "text-decoration: none;">
+                <h2 id = "headerTitle">Todd T. Talley</h2>
                 <h2 id = "phdText" >Ph.D.</h2>
-
+                </a>
+                    
             </div>
             <!-- <div class="col-sm-4"></div> -->
-            <div class="col-sm-4">
-                    <!-- <div class="topnav" id="myTopnav">
-                            <a href="#home" class="active">Home</a>
-                            <a href="#news">News</a>
-                            <a href="#contact">Contact</a>
-                            <a href="#about">About</a>
+            
+            <div class="col-sm-8">
+<!--                 
+                    <div class = "dropdown">
+                    <div id = "navLogo">
+                       <a> <img src = "assetsv2/white-logo.svg" width="55" height="55"> </a>
+                    </div>
+                    <div class="dropdown-content">
+                            <a href="#">Link 1</a> <br />
+                            <a href="#">Link 2</a> <br />
+                            <a href="#">Link 3</a> <br />
+                    </div>
+                    </div> -->
+                   
+                    
+                
+                    <div class="header" id="myTopnav">
+                            <a href="#jsmole-container">Awards</a>
+                            <a href="#prof-org-link">Organizations</a>
+                            <a href="#students-link">Students</a>
+                            <a href="#lectures-link">Lectures</a>
+                            <a href="#publications-link">Publications</a>
+                            <a href ="#contact-link">Contact</a> 
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                               <i class="fa fa-bars"></i>
                             </a>
-                          </div> -->
-                
+                    </div>
+                    <div class = "col-sm-1">
+                   
+
+                        </div>
             </div>
-            <div class = "col-sm-1">
-             
-                    
-            </div>
-            <div class = "col-sm-1">
-            </div>
+           
+           
+            
         </div>
     </div>
 </div>
@@ -82,18 +89,23 @@
 <br />
 <br />
 
-<body>
+<body id = "intro-link">
+        <div id = "splashImg">
+                <div id = "mobileMolecule-img">
+                    <img src="assetsv2/backdrop-vert-grey-purp-02.svg" >
+                </div>
+        </div>
     <div class="row">
             <div class="col-sm-1">
                     
                 </div>
         <div class="col-sm-5">
-           
+           <br />
             <p id="intro">
                 Dr. Talley is a consultant, researcher, and Cheif Scientific Officer. <a href = "https://scholar.google.com/citations?user=WPHVWCYAAAAJ&hl=en&oi=ao" target="_blank">After his years of research in Toxicology, Crystallography and Neuroparhmacology</a>, Dr. Talley consults and oversees Scientific operations for several private companies throughout Washington
                 state. Have a business in need of analytic-driven strategies? Reach out for a consultation by emailing: <a href = "tttalley@live.com">tttalley@live.com</a>.
             </p>
-            <div id = "jsmole-container">
+            <!-- <div id = "jsmole-container">
                 <script type="text/javascript">
                     jmolApplet0 = Jmol.getApplet("jmolApplet", Info);
                     Jmol.script(jmolApplet," load 5tvc.pdb; spin on; restrict protein; cartoons; color structure;")
@@ -101,26 +113,24 @@
                 <p>
                     <a href ="http://www.rcsb.org/structure/5TVC">Protein 5tvc</a>
                 </p>
+                </div> -->
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                    var stage = new NGL.Stage("jsmole-container");
+                    stage.loadFile("rcsb://5tvc", {defaultRepresentation: true});
+                    });
+                  </script>
+                  <div id = "jsmole-container" style = "border: none;">
+                    <a href ="http://www.rcsb.org/structure/5TVC"><i>Protein 5tvc</i></a>
                 </div>
+            </div>
+               
                 <br />
                 <br />
                 <br />
                 <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-        </div>
+                
 
         <div id="education-title" class="col-sm-5">
                 
@@ -175,7 +185,7 @@
             <p>
                 Tobacco-Related Disease Research Program Postdoctoral Fellowship; declined June 2002
             </p>
-            <p>
+            <p >
                 National Institutes of Health National Research Service Award; declined July 2002
             </p>
             <!-- <div id = "jsmole-container">
@@ -222,7 +232,7 @@
             <p>
                 Post-graduate Researcher Department of Pharmacology, University of California, San Diego La Jolla, CA 92093-0636 2005-2006
             </p>
-            <p>
+            <p id = "prof-org-link">
                 Post-doctoral Fellow Department of Pharmacology, University of California, San Diego La Jolla, CA 92093-0636 2001-2005
             </p>
             <br />
@@ -258,7 +268,7 @@
                         <a href = "http://www.aacr.org/Pages/Home.aspx" target="_blank">American Association for Cancer Research</a>
                     </p>
                     <p>
-                        <a href = "http://www.amercrystalassn.org/" target="_blank">American Crystallographic Association</a>
+                        <a  href = "http://www.amercrystalassn.org/" target="_blank">American Crystallographic Association</a>
                     </p>
                     <br />
                     <br />
@@ -267,19 +277,20 @@
                     <br />
                     <br />
                 </div>
-                <div class = "col-sm-5" style = "top:100px;">
+               
+                <div class = "col-sm-5" >
                     <!-- <div >
                     <img src= "assetsv2/grey-backdrop-horiz.svg">  
                     </div> -->
-                    <div id = "mobileMolecule-img">
-                        <img src="assetsv2/backdrop-vert-grey-purp-02.svg" >
-                    </div>
+                    
                 </div>
                 <div class="col-sm-1"></div>
                 
             </div>
-            
-             <div class="row">
+            <p id = "students-link" ></p>
+            <br />
+            <br />
+             <div  class="row">
                 <div class="col-sm-1"></div>
                     <div id="students-left" class="col-sm-4">
                         <h3>
@@ -361,7 +372,7 @@
                         <p>
                             <a href = "https://www.linkedin.com/in/deepika-n-0a744956/" target="_blank"> Deepika Nayyar</a>
                         </p>
-                        <p>
+                        <p id = "lectures-link">
                              Christopher P.H. Redgate
                         </p>
                     
@@ -465,7 +476,7 @@
                         <p>
                                 <i>Nicotinic Receptors: Structure, function and drug design.</i> <br /><b> Tijuana, Mexico, September 4th, 2008 </b>
                         </p>
-                        <p>
+                        <p id = "publications-link">
                                 <i>Drugs from worms and snails: The acetylcholine binding protein as a tool in drug design.</i><br /> <b>Bangkok, Thailand, March 20th, 2008</b>
                         </p>
 
@@ -586,14 +597,57 @@ Grimster NP, Stump B, Fotsing JR, Weide T, <b>Talley TT</b>, Yamauchi JG, Nemecz
                 <p>
                         Doorn JA, Gage DA, Schall M, <b>Talley TT</b>, Thompson CM, & Richardson RJ (2000) <i> Inhibition of acetylcholinesterase by (1S,3S)-isomalathion proceeds with loss of thiomethyl: kinetic and mass spectral evidence for an unexpected primary leaving group.</i> Chem Res Toxicol 13(12):1313-1320.
                 </p>
-                <p>
-                        Jianmongkol S, Marable BR, Berkman CE, <b>Talley TT</b>, Thompson CM, & Richardson RJ (1999) <i> Kinetic evidence for different mechanisms of acetylcholinesterase inhibition by (1R)- and (1S)-stereoisomers of isomalathion. </i> Toxicol Appl Pharmacol 155(1):43-53.
+                <p >
+                        Jianmongkol S, Marable BR, Berkman CE, <b >Talley TT</b>, Thompson CM, & Richardson RJ (1999) <i id= "contact-link"> Kinetic evidence for different mechanisms of acetylcholinesterase inhibition by (1R)- and (1S)-stereoisomers of isomalathion. </i> Toxicol Appl Pharmacol 155(1):43-53.
                 </p>
                     </div>
-                    <div class = "col-sm-3"></div>
+                    <div i class = "col-sm-3"></div>
                 </div>
     
 
+
+                <div class = "row centered">
+                        <div class = "col-sm-1"></div>
+                        <div class = "col-sm-8" id = "lectures">
+                           <h3>
+                               Contact
+                           </h3>
+                           <p>
+                               Reach out with any questions via email: tttalley@live.com or by using the form below:
+                           </p>
+                           <form action="mailto:tttalley@live.com" method="GET">
+
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            
+                            
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            
+                                <input type="submit" value="Submit" >
+                            
+                              </form>
+                        </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class = "row centered">
+                        <div class = "col-sm-4"></div>
+                        <div class = "col-sm-4" id = "lectures">
+                                <a href="#intro-link"><input style = "width: 70%; height: 70px; font-size:34px; -webkit-text-fill-color: white;"type="submit" value="Back to Top" ></a>
+                </div>
+                <div class = "col-sm-4"></div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
 
 </body>
 
