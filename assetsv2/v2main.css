@@ -61,23 +61,8 @@
    transition-duration: 1s;
 }
 
-.dropdown:hover {
-    
-    background-color: #ddd;
-    transition-duration: 1s;
-    -moz-transition-delay: 1s;
-    fill-opacity: 75%;
-    
- }
-.dropdown:hover .dropdown-content {
-display:none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
 
-}
+
 
 
 
@@ -265,7 +250,7 @@ a {
 }
 #header-title2 {
     -webkit-text-fill-color: white;
-    font-family: font-family: 'Cutive', serif;
+    font-family: 'Cutive', serif;
 
 }
 
