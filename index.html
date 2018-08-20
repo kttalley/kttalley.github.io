@@ -35,7 +35,7 @@
                     <div class="col-sm-1">
                     
           
-                        <img src="assetsv2/white-logo.svg"  id = "logo" height = "40px" width="40px" >
+                        <!-- <img src="assetsv2/white-logo.svg"  id = "logo" height = "40px" width="40px" > -->
                         
                     </div>
             <div class=" col-sm-2">
@@ -49,10 +49,7 @@
             
             <div class="col-sm-8">
 <!--                 
-                    <div class = "dropdown">
-                    <div id = "navLogo">
-                       <a> <img src = "assetsv2/white-logo.svg" width="55" height="55"> </a>
-                    </div>
+                   
                     <div class="dropdown-content">
                             <a href="#">Link 1</a> <br />
                             <a href="#">Link 2</a> <br />
@@ -73,8 +70,12 @@
                               <i class="fa fa-bars"></i>
                             </a>
                     </div>
+                    </div>
                     <div class = "col-sm-1">
-                   
+                            <div class = "dropdown">
+                                    <div id = "navLogo">
+                                       <a href = "#intro-link"> <img src = "assetsv2/white-logo.svg" width="55" height="55"> </a>
+                                    </div>
 
                         </div>
             </div>
@@ -118,8 +119,17 @@
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
                     var stage = new NGL.Stage("jsmole-container");
-                    stage.loadFile("rcsb://5tvc", {defaultRepresentation: true});
-                    });
+                    
+                    // stage.loadFile("rcsb://5tvc", {defaultRepresentation: true,
+                    //                                 setSpin: true,
+
+                    stage.loadFile("rcsb://5tvc").then(function (o) {
+  o.addRepresentation("cartoon");
+  var duration = 2000;  // optional duration for animation, defaults to zero
+  o.autoView(duration);  // focus on the whole structure
+  o.setSpin(true);                                                  });
+                    stage.setSpin(true);
+                });
                   </script>
                   <div id = "jsmole-container" style = "border: none;">
                     <a href ="http://www.rcsb.org/structure/5TVC"><i>Protein 5tvc</i></a>
