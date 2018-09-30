@@ -1,3 +1,12 @@
+.dropdown {
+    width:80px;
+    height: 75px;
+    display: block;
+   z-index: 1000;
+   background-image:url(assetsv2/white-logo.svg);
+   transition-duration: 1s;
+   overflow: hidden;
+}
 @media only screen and (max-width:910px) {
    
       #phdText {
@@ -7,7 +16,15 @@
     #myTopnav a{
         font-size: 12px;
     }
-  
+    .dropdown {
+        width:80px;
+        height: 75px;
+        display: block;
+       z-index: 1000;
+       background-image:url(assetsv2/white-logo.svg);
+       transition-duration: 1s;
+       overflow: hidden;
+    }
 }
 
 @media only screen and (max-width: 835px) {
@@ -45,21 +62,54 @@
  }
     
     
-    #logo {
-        display: none;
-      }
 
 
 
-.dropdown {
-    width:50px;
-    height: 50px;
-    transform: translate(285px, 40px);
-    display: block;
-   z-index: 1000;
-   background-image:url(assetsv2/white-logo.svg);
-   transition-duration: 1s;
-}
+      .dropdown {
+        width:80px;
+        height: 75px;
+        transform: translate(-200px, 25px);
+       z-index: 1000;
+       transition-duration: 1s;
+       position: fixed !important;
+       overflow:hidden;
+        -webkit-transition: opacity 0.7s linear;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -text-transition: all 0.7s ease-in-out;
+    }
+
+    .dropdown a {
+        -webkit-text-fill-color: white;
+        text-decoration: none;
+        text-align: center;
+        line-height: 36px;
+        margin-left: 24px;
+        margin-top: 32px;
+    }
+    #myTopnav {
+        display:none;
+    }
+ 
+    .dropdown:hover {
+        text-align: left;
+        padding:1vh;
+        -webkit-text-fill: white;
+        font-size: 28px;
+        width:250px;
+        height: 350px;
+        display: block;
+       z-index: 1000;
+       transition-duration: 1s;
+        z-index:999999999;
+        opacity: 1;
+        background:rgb(205, 184, 255);
+        overflow:hidden;
+        box-shadow: 5px 9px 70px grey;
+    }
+
+
 
 
 
@@ -111,32 +161,141 @@
     }
 
     .dropdown {
-        width:50px;
-        height: 50px;
-        transform: translate(285px, -70px);
+        font-size: 22px;
+        width:80px;
+        height: 75px;
+        transform: translate(315px, -90px);
        z-index: 1000;
-       background-image:url(assetsv2/white-logo.svg);
        transition-duration: 1s;
+       position: fixed !important;
+       overflow:hidden;
+        -webkit-transition: opacity 0.7s linear;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -text-transition: all 0.7s ease-in-out;
+    }
+
+    .dropdown a {
+        -webkit-text-fill-color: white;
+        text-decoration: none;
+        text-align: center;
+        line-height: 36px;
+        margin-left: 16px;
+        margin-top: 32px;
+    }
+    .dropdown a:hover {
+        -webkit-transition: all 0.7s ease-in-out;
+        -webkit-text-fill-color: grey;
     }
  
-   .dropdown:hover {
+    .dropdown:hover {
+        transform: translate(190px, -90px);
+        text-align: left;
+        padding:1vh;
+        -webkit-text-fill: white;
         
-       
-        
-     }
-    .dropdown:hover .dropdown-content a{
-    position: absolute;
-   
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
+        width:250px;
+        height: 350px;
+        display: block;
+       z-index: 1000;
+       transition-duration: 1s;
+        z-index:999999999;
+        opacity: 1;
+        background:rgb(205, 184, 255);
+        overflow:hidden;
+        box-shadow: 5px 9px 70px grey;
     }
+    #cubeabout{
+        border:1px solid {color:Border};
+        font-weight: bolder;
+        position:fixed !important;
+        left:-1px; padding-top:11px;
+        top:120px;
+        padding-bottom:11px;
+        text-align: right;
+        padding-right: 20px;
+        height:15px;
+        width:180px;
+        font-size:16px;
+        line-height:22px;
+        -webkit-text-fill: black;
+        
+        overflow:hidden;
+        -webkit-transition: opacity 0.7s linear;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -text-transition: all 0.7s ease-in-out;
+        background:transparent;
+        z-index:9999;}
+        
+        #cubeabout:hover{
+        
+        font-size:20px;
+        height:265px;
+        width:350px;
+        z-index:999999999;
+        opacity: 1;
+        line-height:20px;
+        background:white;
+        overflow:hidden;
+        }
 
     #mobileNav a{
         font-size: 18px;
     }
 <<<<<<< HEAD
+}
+
+@media only screen and (max-width: 395px) {
+    .dropdown {
+        font-size: 22px;
+        width:80px;
+        height: 75px;
+        transform: translate(225px, -90px);
+       z-index: 1000;
+       transition-duration: 1s;
+       position: fixed !important;
+       overflow:hidden;
+        -webkit-transition: opacity 0.7s linear;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -text-transition: all 0.7s ease-in-out;
+    }
+
+    .dropdown a {
+        -webkit-text-fill-color: white;
+        text-decoration: none;
+        text-align: center;
+        line-height: 36px;
+        margin-left: 16px;
+        margin-top: 32px;
+    }
+    .dropdown a:hover {
+        -webkit-transition: all 0.7s ease-in-out;
+        -webkit-text-fill-color: grey;
+    }
+ 
+    .dropdown:hover {
+        transform: translate(105px, -90px);
+        text-align: left;
+        padding:1vh;
+        -webkit-text-fill: white;
+        
+        width:260px;
+        height: 350px;
+        display: block;
+       z-index: 1000;
+       transition-duration: 1s;
+        z-index:999999999;
+        opacity: 1;
+        background:rgb(205, 184, 255);
+        overflow:hidden;
+        box-shadow: 5px 9px 70px grey;
+    }
+
 }
 
 
